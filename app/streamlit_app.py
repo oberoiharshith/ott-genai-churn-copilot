@@ -147,8 +147,9 @@ with right:
         st.code(out)
 
     st.caption(
-        "Tip: set OPENAI_API_KEY to use a real model. If not set, the app uses a safe fallback output."
+    "Tip: set an LLM API key to enable live generation. Without it, a safe local fallback is used."
     )
+
 
 st.divider()
 st.subheader("A/B test simulation (optional)")

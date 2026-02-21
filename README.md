@@ -41,8 +41,8 @@ streamlit run app/streamlit_app.py
 ## Using a real LLM (optional)
 If you want the app to call an LLM, set:
 ```bash
-export API_KEY="your_key"
-export MODEL="xyz"
+export LLM_API_KEY="your_key"
+export LLM_MODEL="..."
 ```
 If no key is set, the app uses a safe fallback output so it still demos end-to-end.
 
