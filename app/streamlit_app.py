@@ -27,16 +27,15 @@ ab_path = os.path.join(ARTIFACT_DIR, "ab_test_summary.json")
 
 
 def run_cmd(cmd: list[str]):
-    """Run a command from the repo root (works on Streamlit Cloud)."""
     repo_root = Path(__file__).resolve().parents[1]
+
     result = subprocess.run(
-        cmd,
+        [sys.executable] + cmd[1:],
         cwd=str(repo_root),
         capture_output=True,
         text=True,
     )
     return result.returncode, result.stdout, result.stderr
-
 
 # Bootstrap artifacts on Streamlit Cloud (or any clean environment)
 if not os.path.exists(scored_path):
