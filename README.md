@@ -1,6 +1,6 @@
-# Quickplay GenAI Churn Copilot (POC)
+# GenAI Churn Copilot (POC)
 
-A product-shaped POC that matches the Quickplay Data Scientist II role:
+A product-shaped POC that matches:
 - churn prediction on OTT-like behavioral data (traditional ML + SQL features)
 - GenAI layer that generates retention messaging + a plain-English reason for churn risk
 - lightweight “deployment” via Streamlit
@@ -41,8 +41,8 @@ streamlit run app/streamlit_app.py
 ## Using a real LLM (optional)
 If you want the app to call an LLM, set:
 ```bash
-export OPENAI_API_KEY="your_key"
-export OPENAI_MODEL="gpt-4.1-mini"
+export API_KEY="your_key"
+export MODEL="xyz"
 ```
 If no key is set, the app uses a safe fallback output so it still demos end-to-end.
 
