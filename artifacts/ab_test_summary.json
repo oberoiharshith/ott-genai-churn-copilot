@@ -1,0 +1,7 @@
+{
+  "cohort": "top_20pct_churn_risk",
+  "n_users": 1000,
+  "control_retention": 0.12423625254582485,
+  "treatment_retention": 0.18664047151277013,
+  "absolute_lift": 0.062404218966945285
+}
