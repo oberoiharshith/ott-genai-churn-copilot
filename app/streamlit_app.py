@@ -40,7 +40,7 @@ def run_cmd(cmd: list[str]):
 
 # Bootstrap artifacts on Streamlit Cloud (or any clean environment)
 if not os.path.exists(scored_path):
-    st.warning("Artifacts not found yet. Build them once, then the app will load normally.")
+    st.warning("Artifacts not found. Build them once to initialize the app.")
 
     with st.expander("Build steps (manual)"):
         st.code(
@@ -79,7 +79,7 @@ if not os.path.exists(scored_path):
         st.success("Artifacts built. Reloading app...")
         st.rerun()
 
-    st.stop()
+    st.stop()  # CRITICAL: prevents pandas read_csv crash before artifacts exist
 
 
 # Load artifacts
