@@ -1,10 +1,18 @@
 # GenAI Churn Copilot (POC)
 
+# OTT GenAI Churn Copilot
+
+ **Live App:** https://ott-genai-churn-copilot.streamlit.app/  
+ **Source Code:** https://github.com/oberoiharshith/ott-genai-churn-copilot
+
 A product-shaped POC that matches:
 - churn prediction on OTT-like behavioral data (traditional ML + SQL features)
 - GenAI layer that generates retention messaging + a plain-English reason for churn risk
 - lightweight “deployment” via Streamlit
 - experimentation thinking via a simulated A/B test
+
+> ℹ️ The live app is hosted on Streamlit Community Cloud and may take ~60–120 seconds to wake from sleep on first open.
+
 
 ## What this demonstrates
 - End-to-end DS ownership: problem framing → features → model → evaluation → product integration
